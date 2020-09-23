@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifOs</title>
+    <link rel="stylesheet day" type="text/css" href="./scripts/styles_day.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+  </head>
+  <body class="day_mode">
+    <header>
+      <div class="top-text">¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.//////Número de visitas: 12.765.803</div>
+    </header>
+    <div class="gral_container">
+      <nav>
+          <div class="buttons_wrapper">
+            <img src="./images/gifOF_logo.png" alt="gif logo">
+            <div class="right">
+              <button class="create_gif_btn" id="create_guifos_btn">Crear Guifos</button>
+              <div class="theme_btn">
+                <select name=" " id="select_theme" class="select_theme">
+                  <option value="" selected class="opcion">Eligir tema</option>
+                  <option value="sailor_day" class="opcion">Sailor Day</option>
+                  <option value="sailor_night" class="opcion">Sailor Night</option>
+                </select>
+              </div>
+              <span class="my_gifs_btn" id="my-gifs-btn"><u>M</u>is Guifos</span>
+            </div>
+          </div>
+      </nav>      
+      <section class="search_section" id="search_section">
+        <div class="search_top_div" id="submit">Buscar</div>
+        <input type="text" class="search_text" id="search_value" placeholder="Busca gifs, hashtags, temas, busca lo que quieras..." onfocus="this.value=''">
+        <button class="searchBtn" id="search"><img src="./images/lupa.svg" alt="lupa"> Buscar</button>
+      </section>
+      <section class="suggestions-tendencies">
+          <div class="sugg_text-box">Hoy te sugerimos:</div>          
+          <div class="suggestions_boxes" id="suggestions_boxes"></div>
+          <div class="tend_text-box">Tendencias:</div>
+          <div class="tendencies_boxes" id="tendencies_boxes"></div>
+      </section>
+    </div>
+  <script src="./scripts/main.js"></script>
+  </body>
+</html>
